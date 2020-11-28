@@ -1,1 +1,2 @@
 DailyReward.cs<mc.megacraft.org>
+Azino.cs<mc.megacraft.org>
