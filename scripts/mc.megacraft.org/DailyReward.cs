@@ -2,7 +2,6 @@
 
 MCC.LoadBot(new DayliReward());
 
-
 //MCCScript Extensions
 
 public class DayliReward : ChatBot
@@ -46,7 +45,8 @@ public class DayliReward : ChatBot
 	}
 	public override void Update()
 	{
-		if (GetCurrentLocation() == new Location(-113.5, 27, 99.5))
+		LogToConsole(GetCurrentLocation());
+		if (GetCurrentLocation() == new Location(-113.5, 27, 99.5) || GetCurrentLocation() == new Location(-113.5, 28, 99.5))
 		{
 			while (use != 3)
 			{
@@ -81,3 +81,4 @@ public class DayliReward : ChatBot
 		string text1 = GetVerbatim(text);
 	}
 }
+
