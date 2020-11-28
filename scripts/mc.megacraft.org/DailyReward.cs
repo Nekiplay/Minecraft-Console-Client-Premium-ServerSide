@@ -45,7 +45,6 @@ public class DayliReward : ChatBot
 	}
 	public override void Update()
 	{
-		LogToConsole(GetCurrentLocation());
 		if (GetCurrentLocation() == new Location(-113.5, 27, 99.5) || GetCurrentLocation() == new Location(-113.5, 28, 99.5))
 		{
 			while (use != 3)
